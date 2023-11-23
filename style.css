@@ -95,8 +95,23 @@ h1 {
   font-family: 'Nunito', sans-serif;
  }
 
+ .images-service img{
+    width: 100%;  
+ }
 
 
+
+
+
+
+
+/* small devices (mobile devices, upto 767px) */
+@media (max-width: 767px) {
+ 
+  h1{
+    font-size: 3rem;
+  }
+}
 
 
 
@@ -107,5 +122,28 @@ h1 {
       width: 1170px;
       margin: auto;
      
+    }
+
+    .services {
+      width: 1170px;
+      margin: auto;
+
+     
+    }
+
+    .images-service{
+      display: flex;
+      gap: 10px;
+      
+    }
+
+    .x, .y{
+      width: 30%;
+      
+      
+    }
+
+    .z{
+      
     }
 }
