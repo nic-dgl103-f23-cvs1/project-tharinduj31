@@ -129,6 +129,33 @@ article span {
   font-weight: bold;
 }
 
+
+/* footer................................................... */
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #505d68;
+}
+
+footer li {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.footer-topic{
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
 /* small devices (mobile devices, upto 767px) */
 @media (max-width: 1200px) {
   h1 {
@@ -201,6 +228,18 @@ article span {
   article{
     width: 30%;
   }
+
+
+footer {
+  width: 1170px;
+  margin: auto;
+display: flex;
+justify-content: space-around;
+
+}
+
+
+
 
 
 
