@@ -1,0 +1,107 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.6rem;
+    color: #a1aeb7;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Global Styles......................................................*/
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+h1 {
+    font-size: 3.8rem;
+    margin: 50% 10% 0 10%;
+    padding-top: 50px;
+    color: #f0f4f7;
+  }
+
+  h2 {
+    font-size: 3.8rem;
+    color: #505d68;
+  }
+
+  p {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    margin: 0 12% 5% 12%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* display: none; */
+  }
+  
+
+  nav li {
+    float: left;
+    margin: 0;
+    padding: 10px;
+  }
+  
+
+ 
+  .background-container {
+   
+    background-image: url(Images/heroimg.png);
+    background-size: cover;
+    
+   
+  }
+
+  .header-hero-container {
+    display: flex ;
+    flex-direction: column;
+
+  }
+
+ nav{
+  display: flex;
+  justify-content: flex-end;
+  color: aliceblue;
+ }
+
+
+  
+
+ .h1class{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 12%;
+    margin-bottom: 8%;
+    
+
+ }
+
+ .h1class span{
+  padding: 5px;
+ }
+
+ .hero p{
+
+  margin-top: 20%;
+  color: aliceblue;
+ }
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 1200px) {
+    .background-container {
+      width: 1170px;
+      margin: auto;
+    }
+}
