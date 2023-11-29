@@ -7,7 +7,7 @@ body {
   color: #a1aeb7;
   margin: 0;
   text-align: center;
-  /* background-color: rgb(239, 229, 239); */
+  background-color: rgb(234, 231, 234);
 }
 
 /* Global Styles......................................................*/
@@ -23,7 +23,7 @@ h1 {
 
 h2 {
   font-size: 3.8rem;
-  color: #505d68;
+  color: #1e3346;
 }
 
 p {
@@ -36,13 +36,20 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 10px 20px 0 0;
-  /* display: none; */
+  display: none;
 }
 
 nav li {
   float: left;
   margin: 0;
-  padding: 10px;
+  padding: 8px;
+}
+
+nav ul a{
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  
 }
 
 .button {
@@ -69,8 +76,21 @@ nav li {
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   color: aliceblue;
+  margin: 25px 15px;
+}
+
+nav img{
+  width: 200px;
+
+}
+
+.show-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .h1class {
@@ -96,6 +116,57 @@ nav {
 .images-service img {
   width: 100%;
 }
+
+.services p{
+  margin-bottom: 3%;
+  color: rgb(0, 0, 0), 0, 0);
+}
+
+.container-service {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  /* max-width: 1200px; */
+  margin-block: 2rem;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.container-service img {
+  max-width: 100%;
+  /* display: block; */
+  object-fit: cover;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+
+
+
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+
+
+
 
 /* team........................................................ */
 .container-team img {
@@ -166,7 +237,28 @@ footer li {
   .div-team-desktop {
     display: none;
   }
+
+  .card {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+   }
+   
+   
+   
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 @media only screen and (min-width: 1200px) {
   .header-hero-container {
@@ -178,6 +270,14 @@ footer li {
     width: 1170px;
     margin: auto;
   }
+
+  .services p{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 25px;
+    
+  }
+  
 
   .images-service {
     display: flex;
@@ -233,8 +333,39 @@ justify-content: space-around;
 
 }
 
+.services{
+  width: 1170px;
+  }
+
+.container-service {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.card {
+  
+  width: 25%;
 
 
+}
+
+nav .toggle {
+  display: none;
+}
+
+#nav-items {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
 
 
 

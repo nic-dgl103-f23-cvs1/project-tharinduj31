@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+
   </head>
   <body>
     <div class="background-container">
@@ -19,13 +21,17 @@
       <div class="header-hero-container">
         <header>
           <nav>
-            <ul>
-              <li>Home</li>
-              <li>Services</li>
-              <li>Team</li>
-              <li>About</li>
-              <li>Careers</li>
-              <li>Contact</li>
+            <img src="Images/Ascent Logo new.png" alt="logo" >
+            <a class="toggle" onclick="showNav()" ><i class="fa fa-bars"></i></a>
+           
+            <ul id="nav-items" >
+             <li><a class="button" href="">Book Appointment</a></li> 
+              <li><a href="">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Contact</a></li>
             </ul>
           </nav>
         </header>
@@ -41,7 +47,8 @@
           <!-- <h1>, Thrive Daily with Ascent Physiotherapy.</h1> -->
           <p>
             our path to wellness in Comox, BC, featuring Manual Therapy,
-            Acupuncture, Radial Shockwave, Personal Training services and more...
+            Acupuncture, Radial Shockwave, Personal Training services and
+            more...
           </p>
         </section>
       </div>
@@ -55,18 +62,26 @@
         treatments and guidance for your overall well-being and peak fitness.
       </p>
 
-      <div class="images-service">
-        <div class="x">
+      <div class="container-service">
+        <div class="card">
           <img src="Images/Physiotherapy.png" alt="Physiotherapy" />
-          <a class="button" href="">Physiotherapy</a>
+          <div class="card-body">
+            <a class="button" href="">Physiotherapy</a>
+          </div>
         </div>
-        <div class="y">
+
+        <div class="card">
           <img src="Images/Personal training.png" alt="Personal training" />
-          <a class="button" href="">Personal training</a>
+          <div class="card-body">
+            <a class="button" href="">Personal training</a>
+          </div>
         </div>
-        <div class="z">
-          <img src="Images/Facility.jpg" alt="Facilities" />
-          <a class="button" href="">Facilities</a>
+
+        <div class="card">
+          <img src="Images/Facility.jpg" alt="Facilities"  height="403.65px">
+          <div class="card-body">
+            <a class="button" href="">Facilities</a>
+          </div>
         </div>
       </div>
 
@@ -124,7 +139,7 @@
           5 years. While my knee isn't 100% better, it feels better than it has
           in a very long time. Extremely satisfied with the service I've
           received.”
-            <br>
+          <br />
           <span>Spencer Barkes</span>
         </article>
         <article>
@@ -132,7 +147,7 @@
           needed after our daughter blew out her knee at dance class. Put my
           daughter at ease and made us feel much more encouraged that she will
           be back dancing one day soon. Thank you Tannis!”
-          <br>
+          <br />
           <span>Andrea Davis</span>
         </article>
         <article>
@@ -140,8 +155,8 @@
           to walk me through my aches and pains. We got down to the core of the
           issues instead of just grazing the surface. I highly recommend you
           check out Ascent Physiotherapy. I've had many issues over the past 15
-          years and their insights was very helpful and informative.”        
-          <br>
+          years and their insights was very helpful and informative.”
+          <br />
           <span>David Milan</span>
         </article>
       </div>
@@ -158,19 +173,27 @@
       </ul>
 
       <ul>
-        <li class="footer-topic" >Follow Us</li>
+        <li class="footer-topic">Follow Us</li>
         <li>Facebook</li>
         <li>Twitter</li>
         <li>Instagram</li>
       </ul>
 
       <ul>
-        <li class="footer-topic" >Contact us</li>
+        <li class="footer-topic">Contact us</li>
         <li>Email: info@example.com</li>
         <li>Phone: (123) 456-7890</li>
         <li>Twitter</li>
         <li>Address: 123 Main Street, City, Country</li>
       </ul>
     </footer>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+
   </body>
 </html>
