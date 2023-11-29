@@ -246,6 +246,39 @@ box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 
 
 }
 
+/* table.................................... */
+
+table {
+  width: 70%;
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #0e1318;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #746363;
+}
+
+td {
+  background-color: #d2c8c8;
+}
+
+caption {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+}
+
+
 
 
 
