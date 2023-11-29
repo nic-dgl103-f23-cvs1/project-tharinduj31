@@ -222,6 +222,18 @@ footer li {
 }
 
 
+/* Service page........................................................................................... */
+
+.service-container {
+  background-image: url(Images/service_img.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.service-container h1{
+ text-align: center;
+}
+
 
 
 

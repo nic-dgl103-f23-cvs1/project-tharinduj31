@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="service-container">
+      <!-- <img src="Images/heroimg.jpg" alt="heroimg"> -->
+
+      <div class="header-hero-container">
+        <header>
+          <nav>
+            <img src="Images/Ascent Logo new.png" alt="logo" />
+            <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+
+            <ul id="nav-items">
+              <li><a class="button" href="">Book Appointment</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <section class="hero">
+          <h1 class="h1class">
+            <span>Physiotherapy Services</span>
+            <!-- <span>Thrive Daily</span>
+              <span>with</span>
+              <span>Ascent Physiotherapy</span> -->
+          </h1>
+
+          <!-- <h1>, Thrive Daily with Ascent Physiotherapy.</h1> -->
+          <p>
+            At Ascent Physiotherapy we offer a wide range of Physiotherapy
+            Services aimed at ensuring you live a thriving, healthy life.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>
