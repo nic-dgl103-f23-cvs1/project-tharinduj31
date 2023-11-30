@@ -26,11 +26,17 @@ h2 {
   color: #1e3346;
 }
 
+h3 {
+  font-size: 3rem;
+  color: #1e3346;
+  margin-top: 60px;
+}
+
 p {
   line-height: 2.4rem;
   font-size: 1.6rem;
   margin: 0 12% 5% 12%;
-   color: #0e1318;
+  color: #0e1318;
 }
 
 nav ul {
@@ -46,11 +52,10 @@ nav li {
   padding: 8px;
 }
 
-nav ul a{
+nav ul a {
   color: white;
   text-decoration: none;
   font-size: 2rem;
-  
 }
 
 .button {
@@ -84,9 +89,8 @@ nav {
   margin: 25px 15px;
 }
 
-nav img{
+nav img {
   width: 200px;
-
 }
 
 .show-items {
@@ -119,7 +123,7 @@ nav img{
   width: 100%;
 }
 
-.services p{
+.services p {
   margin-bottom: 3%;
   color: rgb(0, 0, 0);
 }
@@ -139,7 +143,6 @@ nav img{
   max-width: 100%;
   /* display: block; */
   object-fit: cover;
-  
 }
 
 .card {
@@ -148,27 +151,18 @@ nav img{
   /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
   width: 100%;
   overflow: hidden;
-  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
-  background: #ECE9E6;
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-
-
-
-
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
 }
 
 .card-body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
-
-
-
-
-
 
 /* team........................................................ */
 .container-team img {
@@ -177,8 +171,7 @@ nav img{
 
 /* review........................................................ */
 
-
-.container-review{
+.container-review {
   margin: auto;
   width: 100%;
 }
@@ -191,7 +184,7 @@ article {
   gap: 10px;
   margin: 10px;
   padding: 15px;
-  
+
   font-family: "Nunito", sans-serif;
   color: #374552;
   background-color: rgb(245, 245, 101);
@@ -202,7 +195,6 @@ article span {
   font-style: italic;
   font-weight: bold;
 }
-
 
 /* footer................................................... */
 
@@ -218,11 +210,10 @@ footer li {
   padding: 10px 0;
 }
 
-.footer-topic{
+.footer-topic {
   font-weight: bold;
   margin-top: 20px;
 }
-
 
 /* Service page........................................................................................... */
 
@@ -233,21 +224,22 @@ footer li {
   height: 100vh;
 }
 
-.service-container h1{
- text-align: center;
- margin-top: 20%;
- margin-bottom: 7%;
+.service-container h1 {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 7%;
 }
 
-.service-page_container-service{
-margin-top: 15px;
+.service-page_container-service {
+  margin-top: 15px;
 }
 
-.service-page_container-service img{
-width: 80%;
-margin: 0 5% 0 5%;
-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-
+.service-page_container-service img {
+  width: 80%;
+  margin: 0 5% 0 5%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 /* table.................................... */
@@ -261,7 +253,8 @@ table {
   color: #0e1318;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
@@ -290,19 +283,40 @@ caption {
   height: 100vh;
 }
 
-.team-container h1{
+.team-container h1 {
   text-align: center;
   margin-top: 20%;
   margin-bottom: 7%;
- }
+}
 
+.team-page_team-card {
+  display: flex;
+  flex-direction: column;
+  /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
+  width: 30%;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  color: #0e1318;
+  margin: auto;
+  margin-top: 30px;
+  margin-top: 20px;
+}
 
-
-
-
-
-
-
+.team-page_container-team {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+ .team-page_team-wrapper p {
+  margin-left: 5%;
+  margin-top: 40px;
+  text-align: justify;
+  
+}
 
 
 /* small devices (mobile devices, upto 767px) */
@@ -323,32 +337,17 @@ caption {
     width: 80%;
     margin: auto;
     margin-top: 10%;
-   }
+  }
 
-   .wrapper{
+  .wrapper {
     overflow: auto;
-   }
+  }
 
-   .service-card .button{
+  .service-card .button {
     margin-bottom: 15px;
     margin-top: 0;
-   }
-   
-   
-   
-
-
-
-
-
-
+  }
 }
-
-
-
-
-
-
 
 @media only screen and (min-width: 1200px) {
   .header-hero-container {
@@ -361,20 +360,17 @@ caption {
     margin: auto;
   }
 
-  .services p{
+  .services p {
     width: 60%;
     margin: auto;
     margin-bottom: 25px;
-    
   }
-  
 
   .images-service {
     display: flex;
     gap: 10px;
   }
 
- 
   .team {
     width: 1170px;
     margin: auto;
@@ -410,83 +406,82 @@ caption {
     display: flex;
   }
 
-  article{
+  article {
     width: 30%;
   }
 
-
-footer {
-  width: 1170px;
-  margin: auto;
-display: flex;
-justify-content: space-around;
-
-}
-
-.services{
-  width: 1170px;
+  footer {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
   }
 
-.container-service {
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-}
+  .services {
+    width: 1170px;
+  }
 
-.card {
-  
-  width: 25%;
+  .container-service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
+  .card {
+    width: 25%;
+  }
 
-}
+  nav .toggle {
+    display: none;
+  }
 
-nav .toggle {
-  display: none;
-}
+  #nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 
-#nav-items {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
+  nav {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+  }
 
-nav {
-  display: flex;
-  align-items: baseline;
-  gap: 20px;
-}
+  /* service page........................................................................... */
 
+  .service-page_container-service {
+    width: 1170px;
+    margin: auto;
+  }
 
-/* service page........................................................................... */
+  .service-card {
+    display: flex;
+    margin: 10%;
+  }
 
+  .service-card img {
+    width: 40%;
+  }
 
-.service-page_container-service{
-  width: 1170px;
-  margin: auto;
-}
+  /* team page........................................................................... */
 
-.service-card{
-  display: flex;
-  margin: 10%;
-  
-}
+  .team-page_team-wrapper {
+    display: flex;
+    
+  }
 
-.service-card img{
-  width: 40%;
-  
-}
+  .team-page_team-wrapper p {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    text-align: justify;
+    width: 60%;
+  }
 
-
-
-
-
-
-
-
-
-
-
+  .team-page_container-team{
+    max-width: 1170px;
+    margin: auto;
+  }
 
 
 }
