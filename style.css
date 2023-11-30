@@ -52,6 +52,7 @@ nav ul {
   margin: 0;
   padding: 10px 20px 0 0;
   display: none;
+
 }
 
 nav li {
@@ -227,7 +228,12 @@ footer ul {
   margin: 0;
   padding: 0;
   color: #505d68;
+  text-align: center;
 }
+
+/* footer{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;           only applied to desktop
+} */
 
 footer li {
   margin: 0;
@@ -464,6 +470,14 @@ caption {
     padding: 0;
   }
 
+  footer ul {
+   text-align: left;
+  }
+  
+  footer{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
   /* team */
   .img-team-mobile {
     display: none;
@@ -472,6 +486,7 @@ caption {
   .reviews {
     width: 1170px;
     margin: auto;
+    margin-bottom: 3%;
   }
 
   .container-review {
