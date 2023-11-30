@@ -267,6 +267,8 @@ form {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
 }
 
 label {
@@ -506,6 +508,7 @@ caption {
     margin: auto;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 30px;
   }
 
   .services {
