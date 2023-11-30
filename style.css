@@ -67,6 +67,10 @@ nav ul a {
   font-size: 2rem;
 }
 
+.click-nav{
+  text-align: center;
+}
+
 .button {
   display: inline-block;
   text-transform: uppercase;
