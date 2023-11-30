@@ -11,8 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="background-container">
@@ -21,11 +23,11 @@
       <div class="header-hero-container">
         <header>
           <nav>
-            <img src="Images/Ascent Logo new.png" alt="logo" >
-            <a class="toggle" onclick="showNav()" ><i class="fa fa-bars"></i></a>
-           
-            <ul id="nav-items" >
-             <li><a class="button" href="">Book Appointment</a></li> 
+            <img src="Images/Ascent Logo new.png" alt="logo" />
+            <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+
+            <ul id="nav-items">
+              <li><a class="button" href="">Book Appointment</a></li>
               <li><a href="">Home</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="">Team</a></li>
@@ -78,7 +80,7 @@
         </div>
 
         <div class="card">
-          <img src="Images/Facility2.png" alt="Facilities" >
+          <img src="Images/Facility2.png" alt="Facilities"  height="438px"/>
           <div class="card-body">
             <a class="button" href="">Facilities</a>
           </div>
@@ -188,12 +190,21 @@
       </ul>
     </footer>
 
+    <section class="disclaimer">
+      <h4>Disclaimer</h4>
+      <p>
+        This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.
+      </p>
+    </section>
+
     <script>
       function showNav() {
         var element = document.getElementById("nav-items");
         element.classList.toggle("show-items");
       }
     </script>
-
   </body>
 </html>
