@@ -16,7 +16,7 @@ font-family: 'Roboto', sans-serif; */
 
 h1 {
   font-size: 5rem;
-  margin: 50% 10% 0 10%;
+  margin: 30% 10% 0 10%;
   padding-top: 50px;
   color: #f0f4f7;
 }
@@ -65,9 +65,10 @@ nav ul a{
 }
 
 .background-container {
-  background-image: url(Images/heroimg2.png);
+  background-image: url(Images/heroimg.png);
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
 .header-hero-container {
@@ -99,8 +100,8 @@ nav img{
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  margin-top: 15%;
-  margin-bottom: 8%;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .h1class span {
@@ -229,10 +230,13 @@ footer li {
   background-image: url(Images/service_img.png);
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
 .service-container h1{
  text-align: center;
+ margin-top: 20%;
+ margin-bottom: 7%;
 }
 
 .service-page_container-service{
@@ -277,6 +281,22 @@ caption {
   text-align: left;
   padding: 10px 0;
 }
+
+/* team page........................................................................................... */
+
+.team-container {
+  background-image: url(Images/team/team.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+.team-container h1{
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 7%;
+ }
+
+
 
 
 
