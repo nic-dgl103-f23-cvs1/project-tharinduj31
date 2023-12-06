@@ -94,7 +94,7 @@ a:hover {
   background-image: url(Images/heroimg.png);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header-hero-container {
