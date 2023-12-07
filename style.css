@@ -11,8 +11,6 @@ body {
 }
 
 /* Global Styles......................................................*/
-/* font-family: 'Nunito', sans-serif;
-font-family: 'Roboto', sans-serif; */
 
 h1 {
   font-size: 5rem;
@@ -38,8 +36,6 @@ h4 {
   margin-top: 60px;
 }
 
-
-
 p {
   line-height: 2.4rem;
   font-size: 1.6rem;
@@ -52,7 +48,6 @@ nav ul {
   margin: 0;
   padding: 10px 20px 0 0;
   display: none;
-
 }
 
 nav li {
@@ -67,7 +62,7 @@ nav ul a {
   font-size: 2rem;
 }
 
-.click-nav{
+.click-nav {
   text-align: center;
 }
 
@@ -82,37 +77,25 @@ nav ul a {
   font-size: 1.2rem;
   margin: 10px 10px;
   cursor: pointer;
-  transition: color 2s ease-in-out; 
+  transition: color 2s ease-in-out;                   /* Transition*/
   transition-property: all;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
-  transition-delay: 0s; 
+  transition-delay: 0s;
 
-  /* border-radius: 35px;
-  padding: 15px 35px;
-  margin: 30px 0;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 0.07em;
-  background-color: #00c6b5;
-  border: 2px solid #00c6b5; */
-  
+
 }
 
-.button:hover {
+.button:hover {                                       /* button hover*/
   color: rgb(177, 241, 149);
-  text-decoration: solid; 
+  text-decoration: solid;
   animation-name: animation;
-  animation-duration: 3s; 
+  animation-duration: 3s;
 }
 
 @keyframes animation {
   0% {
-    background-color: rgb(238, 98, 98)(255, 145, 0);
+    background-color: rgb(238, 98, 98);
   }
   25% {
     background-color: rgb(142, 142, 109);
@@ -125,11 +108,13 @@ nav ul a {
   }
 }
 
-a:hover {
-  color: rgb(177, 241, 149);
-  text-decoration: solid; 
- 
+a:hover {                                      /* a tag hover*/
+  color: rgb(79, 142, 52);
+  text-decoration: solid;
 }
+
+/* Header and Hero section........................................................ */
+
 
 .background-container {
   background-image: url(Images/heroimg.png);
@@ -181,6 +166,9 @@ nav img {
   font-family: "Nunito", sans-serif;
 }
 
+/* Service section........................................................ */
+
+
 .images-service img {
   width: 100%;
 }
@@ -226,20 +214,19 @@ nav img {
   gap: 0.5rem;
 }
 
-
-
-/* team........................................................ */
+/* team section........................................................ */
 .container-team img {
   width: 80%;
 }
 
+/* CTA section........................................................ */
 
-.cta{
+.cta {
   background-color: #a2b0bc;
   padding: 5% 10%;
 }
 
-/* review........................................................ */
+/* review section........................................................ */
 
 .container-review {
   margin: auto;
@@ -269,11 +256,17 @@ article span {
 /* footer................................................... */
 
 footer ul {
-  list-style-type: none;
+ 
   margin: 0;
   padding: 0;
   color: #505d68;
   text-align: center;
+  list-style: none;
+}
+
+footer ul a{
+  text-decoration: none;
+
 }
 
 /* footer{
@@ -290,16 +283,20 @@ footer li {
   margin-top: 20px;
 }
 
-
-.disclaimer{
+.disclaimer {
   font-style: italic;
   background-color: #71808e;
   margin-bottom: 0;
 }
 
-.disclaimer p{
+.disclaimer p {
   margin-bottom: 0;
   padding-bottom: 20px;
+}
+
+iframe{
+  width: 100%;
+  height:300px;
 }
 
 /* form.............................................................................. */
@@ -324,7 +321,7 @@ input {
   box-sizing: border-box;
 }
 
- button {
+button {
   background-color: #4caf50;
   color: #fff;
   padding: 10px 15px;
@@ -335,10 +332,7 @@ input {
 
 button:hover {
   background-color: #45a049;
-} 
-
-
-
+}
 
 /* Service page........................................................................................... */
 
@@ -436,15 +430,13 @@ caption {
   flex-direction: column;
   gap: 0.5rem;
 }
- .team-page_team-wrapper p {
+.team-page_team-wrapper p {
   margin-left: 5%;
   margin-top: 40px;
   text-align: justify;
-  
 }
 
-
-/* small devices (mobile devices, upto 767px) */
+/* small devices (mobile devices, upto 1200px).......................................*/
 @media (max-width: 1200px) {
   h1 {
     font-size: 3rem;
@@ -474,6 +466,7 @@ caption {
   }
 }
 
+/* Larger devices (from 1200px).......................................*/
 @media only screen and (min-width: 1200px) {
   .header-hero-container {
     width: 1170px;
@@ -518,10 +511,10 @@ caption {
   }
 
   footer ul {
-   text-align: left;
+    text-align: left;
   }
-  
-  footer{
+
+  footer {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
@@ -603,7 +596,6 @@ caption {
 
   .team-page_team-wrapper {
     display: flex;
-    
   }
 
   .team-page_team-wrapper p {
@@ -614,19 +606,16 @@ caption {
     width: 60%;
   }
 
-  .team-page_container-team{
+  .team-page_container-team {
     max-width: 1170px;
     margin: auto;
   }
 
-
-  form{
+  form {
     width: 1170px;
     margin: auto;
     width: 50%;
     margin-top: 2%;
     margin-bottom: 5%;
   }
-
-
 }
