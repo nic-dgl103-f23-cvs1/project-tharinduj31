@@ -1,0 +1,621 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #a1aeb7;
+  margin: 0;
+  text-align: center;
+  background-color: rgb(234, 231, 234);
+}
+
+/* Global Styles......................................................*/
+
+h1 {
+  font-size: 5rem;
+  margin: 30% 10% 0 10%;
+  padding-top: 50px;
+  color: #f0f4f7;
+}
+
+h2 {
+  font-size: 3.8rem;
+  color: #1e3346;
+}
+
+h3 {
+  font-size: 3rem;
+  color: #1e3346;
+  margin-top: 60px;
+}
+
+h4 {
+  font-size: 1.6rem;
+  color: #1e3346;
+  margin-top: 60px;
+}
+
+p {
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  margin: 0 12% 2% 12%;
+  color: #0e1318;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 20px 0 0;
+  display: none;
+}
+
+nav li {
+  float: left;
+  margin: 0;
+  padding: 8px;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.click-nav {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 10px;
+  background-color: #374552;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 10px 10px;
+  cursor: pointer;
+  transition: color 2s ease-in-out;                   /* Transition*/
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+
+
+}
+
+.button:hover {                                       /* button hover*/
+  color: rgb(177, 241, 149);
+  text-decoration: solid;
+  animation-name: animation;
+  animation-duration: 3s;
+}
+
+@keyframes animation {
+  0% {
+    background-color: rgb(238, 98, 98);
+  }
+  25% {
+    background-color: rgb(142, 142, 109);
+  }
+  50% {
+    background-color: rgb(44, 108, 63);
+  }
+  100% {
+    background-color: rgb(142, 142, 109);
+  }
+}
+
+a:hover {                                      /* a tag hover*/
+  color: rgb(79, 142, 52);
+  text-decoration: solid;
+}
+
+/* Header and Hero section........................................................ */
+
+
+.background-container {
+  background-image: url(Images/heroimg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.header-hero-container {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  margin: 25px 15px;
+}
+
+nav img {
+  width: 200px;
+}
+
+.show-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.h1class {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.h1class span {
+  padding: 5px;
+}
+
+.hero p {
+  margin-top: 5%;
+  color: aliceblue;
+  font-size: 2rem;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Service section........................................................ */
+
+
+.images-service img {
+  width: 100%;
+}
+
+.services p {
+  margin-bottom: 3%;
+  color: rgb(0, 0, 0);
+}
+
+.container-service {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  /* max-width: 1200px; */
+  margin-block: 2rem;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.container-service img {
+  max-width: 100%;
+  /* display: block; */
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* team section........................................................ */
+.container-team img {
+  width: 80%;
+}
+
+/* CTA section........................................................ */
+
+.cta {
+  background-color: #a2b0bc;
+  padding: 5% 10%;
+}
+
+/* review section........................................................ */
+
+.container-review {
+  margin: auto;
+  width: 100%;
+}
+
+article {
+  border: 1px solid #023f72 !important;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+
+  gap: 10px;
+  margin: 10px;
+  padding: 15px;
+
+  font-family: "Nunito", sans-serif;
+  color: #374552;
+  background-color: rgb(245, 245, 101);
+}
+
+article span {
+  /* margin-top: 100px; */
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* footer................................................... */
+
+footer ul {
+ 
+  margin: 0;
+  padding: 0;
+  color: #505d68;
+  text-align: center;
+  list-style: none;
+}
+
+footer ul a{
+  text-decoration: none;
+
+}
+
+/* footer{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;           only applied to desktop
+} */
+
+footer li {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.footer-topic {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.disclaimer {
+  font-style: italic;
+  background-color: #71808e;
+  margin-bottom: 0;
+}
+
+.disclaimer p {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+iframe{
+  width: 100%;
+  height:300px;
+}
+
+/* form.............................................................................. */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Service page........................................................................................... */
+
+.service-container {
+  background-image: url(Images/service_img.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.service-container h1 {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 7%;
+}
+
+.service-page_container-service {
+  margin-top: 15px;
+}
+
+.service-page_container-service img {
+  width: 80%;
+  margin: 0 5% 0 5%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+/* table.................................... */
+
+table {
+  width: 70%;
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #0e1318;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #746363;
+}
+
+td {
+  background-color: #d2c8c8;
+}
+
+caption {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+}
+
+/* team page........................................................................................... */
+
+.team-container {
+  background-image: url(Images/team/team.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+.team-container h1 {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 7%;
+}
+
+.team-page_team-card {
+  display: flex;
+  flex-direction: column;
+  /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
+  width: 30%;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  color: #0e1318;
+  margin: auto;
+  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.team-page_container-team {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.team-page_team-wrapper p {
+  margin-left: 5%;
+  margin-top: 40px;
+  text-align: justify;
+}
+
+/* small devices (mobile devices, upto 1200px).......................................*/
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .div-team-desktop {
+    display: none;
+  }
+
+  .card {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  .wrapper {
+    overflow: auto;
+  }
+
+  .service-card .button {
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+}
+
+/* Larger devices (from 1200px).......................................*/
+@media only screen and (min-width: 1200px) {
+  .header-hero-container {
+    width: 1170px;
+    margin: auto;
+  }
+
+  .services {
+    width: 1170px;
+    margin: auto;
+  }
+
+  .services p {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .images-service {
+    display: flex;
+    gap: 10px;
+  }
+
+  .team {
+    width: 1170px;
+    margin: auto;
+  }
+
+  .container-team {
+    display: flex;
+    padding: 5% 5%;
+  }
+
+  .container-team img {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .container-team-text {
+    width: 40%;
+    margin: 5% 10%;
+    padding: 0;
+  }
+
+  footer ul {
+    text-align: left;
+  }
+
+  footer {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  /* team */
+  .img-team-mobile {
+    display: none;
+  }
+
+  .reviews {
+    width: 1170px;
+    margin: auto;
+    margin-bottom: 3%;
+  }
+
+  .container-review {
+    display: flex;
+  }
+
+  article {
+    width: 30%;
+  }
+
+  footer {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+
+  .services {
+    width: 1170px;
+  }
+
+  .container-service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 25%;
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  #nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 20px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* service page........................................................................... */
+
+  .service-page_container-service {
+    width: 1170px;
+    margin: auto;
+  }
+
+  .service-card {
+    display: flex;
+    margin: 10%;
+  }
+
+  .service-card img {
+    width: 40%;
+  }
+
+  /* team page........................................................................... */
+
+  .team-page_team-wrapper {
+    display: flex;
+  }
+
+  .team-page_team-wrapper p {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    text-align: justify;
+    width: 60%;
+  }
+
+  .team-page_container-team {
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  form {
+    width: 1170px;
+    margin: auto;
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+}
