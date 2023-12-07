@@ -81,14 +81,55 @@ nav ul a {
   text-decoration: none;
   font-size: 1.2rem;
   margin: 10px 10px;
+  cursor: pointer;
+  transition: color 2s ease-in-out; 
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s; 
+
+  /* border-radius: 35px;
+  padding: 15px 35px;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.07em;
+  background-color: #00c6b5;
+  border: 2px solid #00c6b5; */
+  
+}
+
+.button:hover {
+  color: rgb(177, 241, 149);
+  text-decoration: solid; 
+  animation-name: animation;
+  animation-duration: 3s; 
+}
+
+@keyframes animation {
+  0% {
+    background-color: rgb(238, 98, 98)(255, 145, 0);
+  }
+  25% {
+    background-color: rgb(142, 142, 109);
+  }
+  50% {
+    background-color: rgb(44, 108, 63);
+  }
+  100% {
+    background-color: rgb(142, 142, 109);
+  }
 }
 
 a:hover {
-  color: rgb(123, 0, 255);
-  text-decoration: solid; /* Add underline on hover */
+  color: rgb(177, 241, 149);
+  text-decoration: solid; 
+ 
 }
-
-
 
 .background-container {
   background-image: url(Images/heroimg.png);
@@ -283,7 +324,7 @@ input {
   box-sizing: border-box;
 }
 
-button {
+ button {
   background-color: #4caf50;
   color: #fff;
   padding: 10px 15px;
@@ -294,7 +335,7 @@ button {
 
 button:hover {
   background-color: #45a049;
-}
+} 
 
 
 
